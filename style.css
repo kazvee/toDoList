@@ -1,0 +1,78 @@
+:root {
+  --main-pink: deeppink;
+  --pale-pink: lavenderblush;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--main-pink);
+  text-align: center;
+}
+
+.todo-container {
+  background: var(--pale-pink);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.input-container {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-input {
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+#add-task-btn {
+  background-color: var(--main-pink);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 15px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+
+.delete-btn {
+  background-color: var(--main-pink);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+} 
+
+.todo-item.completed {
+  opacity: 0.7;
+  text-decoration: line-through 2px var(--main-pink);
+}
